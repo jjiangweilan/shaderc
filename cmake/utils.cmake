@@ -179,7 +179,7 @@ function(shaderc_combine_static_lib new_target target)
   shaderc_get_transitive_libs(${target} all_libs)
 
   set(libname
-      ${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_CFG_INTDIR}/${CMAKE_STATIC_LIBRARY_PREFIX}${new_target}${CMAKE_STATIC_LIBRARY_SUFFIX})
+      ${CMAKE_CURRENT_BINARY_DIR}/$<CONFIG>/${CMAKE_STATIC_LIBRARY_PREFIX}${new_target}${CMAKE_STATIC_LIBRARY_SUFFIX})
 
   if (MSVC)
     string(REPLACE ";" ">;$<TARGET_FILE:" temp_string "${all_libs}")
