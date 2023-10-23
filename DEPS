@@ -1,18 +1,23 @@
 use_relative_paths = True
 
 vars = {
+  'abseil_git':  'https://github.com/abseil',
   'google_git':  'https://github.com/google',
   'khronos_git': 'https://github.com/KhronosGroup',
 
-  'effcee_revision' : '35912e1b7778ec2ddcff7e7188177761539e59',
-  'glslang_revision': '1fb2f1d7896627d62a289439a2c3e750e551a7ab',
-  'googletest_revision': 'd9bb8412d60b993365abb53f00b6dad9b2c01b62',
-  're2_revision': '954656f47fe8fb505d4818da1e128417a79ea500',
-  'spirv_headers_revision': 'd13b52222c39a7e9a401b44646f0ca3a640fbd47',
-  'spirv_tools_revision': '63de608daeb7e91fbea6d7477a50debe7cac57ce',
+  'abseil_revision': '5be22f98733c674d532598454ae729253bc53e82',
+  'effcee_revision' : '19b4aa87af25cb4ee779a071409732f34bfc305c',
+  'glslang_revision': '48f9ed8b08be974f4e463ef38136c8f23513b2cf',
+  'googletest_revision': 'e47544ad31cb3ceecd04cc13e8fe556f8df9fe0b',
+  're2_revision': 'c9cba76063cf4235c1a15dd14a24a4ef8d623761',
+  'spirv_headers_revision': '4183b260f4cccae52a89efdfcdd43c4897989f42',
+  'spirv_tools_revision': '360d469b9eac54d6c6e20f609f9ec35e3a5380ad',
 }
 
 deps = {
+  'third_party/abseil_cpp':
+      Var('abseil_git') + '/abseil-cpp.git@' + Var('abseil_revision'),
+
   'third_party/effcee': Var('google_git') + '/effcee.git@' +
       Var('effcee_revision'),
 
