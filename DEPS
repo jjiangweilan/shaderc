@@ -9,7 +9,7 @@ vars = {
   'effcee_revision' : 'f8e8a164822d4f65e757bff66bc00e1567959aa0',
   'glslang_revision': '516724d96aa3b06dda3de642d55581adf8c2fdf3',
   'googletest_revision': '8eff9e336692fc95961e096564f1044c600b881d',
-  're2_revision': 'c9cba76063cf4235c1a15dd14a24a4ef8d623761',
+  're2_revision': '972a15cedd008d846f1a39b2e88ce48d7f166cbd',
   'spirv_headers_revision': '4183b260f4cccae52a89efdfcdd43c4897989f42',
   'spirv_tools_revision': '360d469b9eac54d6c6e20f609f9ec35e3a5380ad',
 }
