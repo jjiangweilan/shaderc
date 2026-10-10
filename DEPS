@@ -10,7 +10,7 @@ vars = {
   'glslang_revision': '79c91f375f7e278cf99d6925c2b8d3de83ef0f53',
   'googletest_revision': '988ea2c1798de7779f656df2281dd36d6039a17a',
   're2_revision': '2da0056814cf180480a19f5cf811e7e1c054bf6d',
-  'spirv_headers_revision': '4183b260f4cccae52a89efdfcdd43c4897989f42',
+  'spirv_headers_revision': '86f980c731e62ae4eaf383d320449d71687936bf',
   'spirv_tools_revision': '360d469b9eac54d6c6e20f609f9ec35e3a5380ad',
 }
 
